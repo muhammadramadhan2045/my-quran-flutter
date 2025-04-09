@@ -17,21 +17,8 @@ class AudioFull {
     this.s05,
   });
 
-  AudioFull.fromJson(Map<String, dynamic> json) {
-    s01 = json['01'];
-    s02 = json['02'];
-    s03 = json['03'];
-    s04 = json['04'];
-    s05 = json['05'];
-  }
+  factory AudioFull.fromJson(Map<String, dynamic> json) =>
+      _$AudioFullFromJson(json);
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['01'] = s01;
-    data['02'] = s02;
-    data['03'] = s03;
-    data['04'] = s04;
-    data['05'] = s05;
-    return data;
-  }
+  Map<String, dynamic> toJson() => _$AudioFullToJson(this);
 }

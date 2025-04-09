@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:my_quran/model/detail_surah.dart';
+import 'package:my_quran/model/data_surah.dart';
 
 part 'surah.g.dart';
 
@@ -7,7 +7,7 @@ part 'surah.g.dart';
 class Surah {
   int? code;
   String? message;
-  List<DetailSurah>? data;
+  List<DataSurah>? data;
 
   Surah({
     this.code,
