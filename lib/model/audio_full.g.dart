@@ -7,11 +7,11 @@ part of 'audio_full.dart';
 // **************************************************************************
 
 AudioFull _$AudioFullFromJson(Map<String, dynamic> json) => AudioFull(
-      s01: json['s01'] as String?,
-      s02: json['s02'] as String?,
-      s03: json['s03'] as String?,
-      s04: json['s04'] as String?,
-      s05: json['s05'] as String?,
+      s01: json['01'] as String?,
+      s02: json['02'] as String?,
+      s03: json['03'] as String?,
+      s04: json['04'] as String?,
+      s05: json['05'] as String?,
     );
 
 Map<String, dynamic> _$AudioFullToJson(AudioFull instance) => <String, dynamic>{

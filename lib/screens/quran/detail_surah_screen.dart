@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:my_quran/providers/detail_surah_provider.dart';
 
 class DetailSurahScreen extends ConsumerWidget {
@@ -110,8 +111,12 @@ class DetailSurahScreen extends ConsumerWidget {
           ),
         );
       }, loading: () {
-        return const Center(
-          child: CircularProgressIndicator(),
+        return Center(
+          child: Lottie.asset(
+            'assets/lottie/lottie_loading.json',
+            width: 150,
+            height: 150,
+          ),
         );
       }),
     );

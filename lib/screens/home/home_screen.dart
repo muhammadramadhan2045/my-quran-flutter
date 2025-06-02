@@ -30,6 +30,15 @@ class HomeScreen extends StatelessWidget {
             },
             child: const Text('Go to Surah'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                AppRoutes.doa,
+              );
+            },
+            child: const Text('Go to Doa'),
+          ),
         ],
       ),
     );

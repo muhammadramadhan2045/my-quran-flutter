@@ -3,10 +3,15 @@ part 'audio_full.g.dart';
 
 @JsonSerializable()
 class AudioFull {
+  @JsonKey(name: '01')
   String? s01;
+  @JsonKey(name: '02')
   String? s02;
+  @JsonKey(name: '03')
   String? s03;
+  @JsonKey(name: '04')
   String? s04;
+  @JsonKey(name: '05')
   String? s05;
 
   AudioFull({
