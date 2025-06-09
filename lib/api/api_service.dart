@@ -30,10 +30,10 @@ class ApiService {
     }
   }
 
-  Future<Map<String, dynamic>> getData() async {
+  Future<Map<String, dynamic>> getData(Map<String, dynamic>? map) async {
     try {
       final response = await http.get(
-        Uri.parse(baseUrl),
+        Uri.parse(baseUrl).replace(queryParameters: map),
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',

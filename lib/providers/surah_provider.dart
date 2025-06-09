@@ -11,7 +11,7 @@ class SurahNotifier extends StateNotifier<AsyncValue<Surah>> {
   Future<void> fetchSurahs() async {
     try {
       state = const AsyncValue.loading();
-      final dynamicData = await ApiService(baseUrl: surahUrl).getData();
+      final dynamicData = await ApiService(baseUrl: surahUrl).getData(null);
 
       Surah surah = Surah.fromJson(dynamicData);
       state = AsyncValue.data(surah);

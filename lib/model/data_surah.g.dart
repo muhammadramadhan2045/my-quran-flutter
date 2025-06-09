@@ -20,16 +20,14 @@ DataSurah _$DataSurahFromJson(Map<String, dynamic> json) => DataSurah(
       ayat: (json['ayat'] as List<dynamic>?)
           ?.map((e) => Ayat.fromJson(e as Map<String, dynamic>))
           .toList(),
-      suratSelanjutnya:
-          json['suratSelanjutnya'] == null || json['suratSelanjutnya'] == false
-              ? null
-              : SuratSelanjutnya.fromJson(
-                  json['suratSelanjutnya'] as Map<String, dynamic>),
-      suratSebelumnya:
-          json['suratSebelumnya'] == null || json['suratSebelumnya'] == false
-              ? null
-              : SuratSelanjutnya.fromJson(
-                  json['suratSebelumnya'] as Map<String, dynamic>),
+      suratSelanjutnya: json['suratSelanjutnya'] == null
+          ? null
+          : SuratSelanjutnya.fromJson(
+              json['suratSelanjutnya'] as Map<String, dynamic>),
+      suratSebelumnya: json['suratSebelumnya'] == null
+          ? null
+          : SuratSelanjutnya.fromJson(
+              json['suratSebelumnya'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$DataSurahToJson(DataSurah instance) => <String, dynamic>{

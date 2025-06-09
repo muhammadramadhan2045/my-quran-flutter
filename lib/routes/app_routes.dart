@@ -4,6 +4,7 @@ import 'package:my_quran/screens/doa/doa_screen.dart';
 import 'package:my_quran/screens/home/home_screen.dart';
 import 'package:my_quran/screens/quran/detail_surah_screen.dart';
 import 'package:my_quran/screens/quran/surah_screen.dart';
+import 'package:my_quran/screens/sholat/sholat_screen.dart';
 
 class AppRoutes {
   static const String home = '/';
@@ -11,6 +12,7 @@ class AppRoutes {
   static const String detailSurah = '/detail-surah';
   static const String doa = '/doa';
   static const String detailDoa = '/detail-doa';
+  static const String sholat = '/sholat';
 
   static Map<String, WidgetBuilder> routes() {
     return {
@@ -31,6 +33,7 @@ class AppRoutes {
           name: args['name'],
         );
       },
+      sholat: (context) => const SholatScreen()
     };
   }
 }

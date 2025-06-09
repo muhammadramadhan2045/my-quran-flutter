@@ -15,9 +15,9 @@ AudioFull _$AudioFullFromJson(Map<String, dynamic> json) => AudioFull(
     );
 
 Map<String, dynamic> _$AudioFullToJson(AudioFull instance) => <String, dynamic>{
-      's01': instance.s01,
-      's02': instance.s02,
-      's03': instance.s03,
-      's04': instance.s04,
-      's05': instance.s05,
+      '01': instance.s01,
+      '02': instance.s02,
+      '03': instance.s03,
+      '04': instance.s04,
+      '05': instance.s05,
     };
